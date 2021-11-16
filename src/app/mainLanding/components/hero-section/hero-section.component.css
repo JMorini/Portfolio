@@ -1,0 +1,134 @@
+.i {
+  display: flex;
+  flex-direction: row;
+  height: 50vh;
+  width: 100vw;
+  margin: 0;
+  padding: 0;
+}
+
+.i-left {
+  width: 50vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.i-right {
+  background-image: url('/assets/black-hex-pink-light.jpeg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  width: 50vw;
+  height: 100%;
+  clip-path: polygon(100% 0, 100% 50%, 100% 100%, 0% 100%, 26% 50%, 0% 0%);
+}
+
+.i-left-wrapper {
+  padding: 50px;
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.i-intro {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.i-title {
+  height: 50px;
+  overflow: hidden;
+}
+
+.i-title-wrapper {
+  height: 100%;
+  animation: move 7s ease-in-out infinite alternate;
+}
+
+@keyframes move {
+  25% {
+    transform: translateY(-50px);
+  }
+  50% {
+    transform: translateY(-100px);
+  }
+  75% {
+    transform: translateY(-150px);
+  }
+  100% {
+    transform: translateY(-200px);
+  }
+}
+
+.i-title-item {
+  height: 50px;
+  font-size: 30px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+}
+
+@media (max-width: 600px) {
+  .i-left {
+    width: 60vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .i-right {
+    background-image: url('/assets/black-hex-pink-light.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    width: 40vw;
+    height: 100%;
+    clip-path: polygon(100% 0, 100% 50%, 100% 100%, 0% 100%, 26% 50%, 0% 0%);
+  }
+
+  .i-intro {
+    font-size: 2.5rem;
+    font-weight: bold;
+  }
+
+  .i-sub {
+    font-size: 1.35rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .i-intro {
+    font-size: 2rem;
+    font-weight: bold;
+  }
+
+  .i-sub {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 375px) {
+  .i {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .i-right {
+    background-image: url('/assets/black-hex-pink-light.jpeg');
+    background-size: cover;
+    background-position: center center;
+    width: 100vw;
+    clip-path: none;
+    order: 1;
+  }
+
+  .i-left {
+    order: 2;
+  }
+}

@@ -1,0 +1,161 @@
+<div class="menu-btn" (click)="showNav()">
+  <i class="fas fa-bars fa-2x"></i>
+</div>
+
+<div class="container">
+  <!-- Nav -->
+  <nav class="main-nav">
+    <img src="/assets/logo.JPG" alt="shoppingstore logo" class="logo" />
+
+    <ul class="main-menu" [ngClass]="!displayNav ? 'hidden' : 'show'">
+      <li><a>Shop</a></li>
+      <li><a>Locations</a></li>
+      <li><a>Contact</a></li>
+    </ul>
+
+    <ul class="right-menu">
+      <li>
+        <a>
+          <i class="fas fa-search"></i>
+        </a>
+      </li>
+      <li>
+        <a>
+          <i class="fas fa-shopping-cart"></i>
+        </a>
+      </li>
+    </ul>
+  </nav>
+
+  <!-- Showcase -->
+  <header class="showcase">
+    <div class="intro">
+      <h2>Holiday Deals</h2>
+      <p>Many Holiday Gifts are on SALE now - save while supplies last</p>
+      <a class="btn"> Shop Deals <i class="fas fa-chevron-right"></i> </a>
+    </div>
+  </header>
+
+  <!-- Home cards 1 -->
+  <section class="home-cards">
+    <div>
+      <img src="/assets/xboxx.jpg" alt="" height="160px" width="150px" />
+      <h3>X-Box Series X</h3>
+      <p>
+        Power your dreams. The next generation is here -- and it's by far the
+        most powerful Xbox console ever.
+      </p>
+      <a>More <i class="fas fa-chevron-right"></i></a>
+    </div>
+    <div>
+      <img src="/assets/ps5.jpg" alt="" height="160px" width="150px" />
+      <h3>Playstation 5 back in stock!</h3>
+      <p>
+        Discover a deeper gaming experience with support for haptic feedback,
+        adaptive triggers, and 3D Audio technology.
+      </p>
+      <a>More <i class="fas fa-chevron-right"></i></a>
+    </div>
+    <div>
+      <img
+        src="/assets/corsair-gaming-pc.jpg"
+        alt=""
+        height="160px"
+        width="150px"
+      />
+      <h3>New Corsair Gaming PCs</h3>
+      <p>
+        Make every move count with the strategic precision and hyper-realistic
+        visuals of the Corsair Vengeance i7200 Series gaming desktop. Delivering
+        mind-blowing, immersive NVIDIA RTX 30-series graphics and plenty of
+        storage.
+      </p>
+      <a>More <i class="fas fa-chevron-right"></i></a>
+    </div>
+    <div>
+      <img
+        src="/assets/google-chromebook-generic.jpg"
+        alt=""
+        height="160px"
+        width="150px"
+      />
+      <h3>Google Chromebooks</h3>
+      <p>
+        Expect more. World class performance, with more privacy, more
+        productivity, and more value.
+      </p>
+      <a>More <i class="fas fa-chevron-right"></i></a>
+    </div>
+  </section>
+
+  <!-- Xbox -->
+  <section class="xbox">
+    <div class="content">
+      <h2>When one gift just isnt enough....</h2>
+      <p>
+        Try our "Cookie of the month" club! Each month your loved one will
+        recieve a delicous assortment of seasonal cookies to bring a smile to
+        their face year-round.
+      </p>
+      <a class="btn"> Join Now <i class="fas fa-chevron-right"></i> </a>
+    </div>
+  </section>
+  <h3 class="low-tech-intro">Make it a low-tech holiday.</h3>
+  <!-- Home cards 2 -->
+  <section class="home-cards">
+    <div>
+      <img
+        src="/assets/redrider-bb-gun.jpg"
+        alt=""
+        height="160px"
+        width="150px"
+      />
+      <h3>Red Rider BB Gun</h3>
+      <p>Don't shoot your eye out, kid.</p>
+      <a>Shop<i class="fas fa-chevron-right"></i></a>
+    </div>
+    <div>
+      <img src="/assets/nukem.jpg" alt="" height="160px" width="150px" />
+      <h3>Nukem Board Game</h3>
+      <p>Get them before they get you!</p>
+      <a>Shop<i class="fas fa-chevron-right"></i></a>
+    </div>
+    <div>
+      <img src="/assets/goodguy-doll.jpg" alt="" height="160px" width="150px" />
+      <h3>Goodguy Doll</h3>
+      <p>Friends till the end.</p>
+      <a>Shop<i class="fas fa-chevron-right"></i></a>
+    </div>
+    <div>
+      <img src="/assets/log.jpg" alt="" height="160px" width="150px" />
+      <h3>All kids love LOG!</h3>
+      <p>It rolls down stairs, alone or in pairs.</p>
+      <a>Shop<i class="fas fa-chevron-right"></i></a>
+    </div>
+  </section>
+
+  <!-- Carbon -->
+  <section class="carbon dark">
+    <div class="content">
+      <h2>
+        Wishing you and yours a<br />
+        happy, safe holiday season.
+      </h2>
+      <p></p>
+    </div>
+  </section>
+
+  <!-- Follow -->
+  <section class="follow">
+    <p>Follow Us</p>
+    <a>
+      <img src="https://i.ibb.co/LrVMXNR/social-fb.png" alt="Facebook" />
+    </a>
+    <a>
+      <img src="https://i.ibb.co/vJvbLwm/social-twitter.png" alt="Twitter" />
+    </a>
+    <a>
+      <img src="https://i.ibb.co/b30HMhR/social-linkedin.png" alt="Linkedin" />
+    </a>
+  </section>
+</div>
