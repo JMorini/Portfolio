@@ -64,7 +64,7 @@
   color: #555;
 }
 
-@media (max-width: 650px) {
+@media (max-width: 950px) {
   .a {
     display: flex;
     flex-direction: row;
