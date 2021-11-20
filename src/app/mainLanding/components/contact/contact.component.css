@@ -1,1 +1,96 @@
- 
+.main-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 70vh;
+    width: 100vw;
+} 
+
+.inner-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+
+}
+
+.left-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    height: 100%;
+
+}
+
+.contact-message{
+    width: 70%;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    box-shadow: 12px 12px 2px 1px rgba(0, 0, 255, .2);
+    border-radius: 10px;
+    border: 1px solid black;
+}
+
+.contact-message h2{
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.contact-message p{
+    font-size: 1.5rem;
+}
+
+.right-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+}
+
+.right-container form{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    height: 90%;
+}
+
+input{
+    margin-top: 10px;
+    width: 70%;
+    height: 4ch;
+    border: 2px solid black;
+    border-radius: 2px;
+}
+
+label{
+    font-size: 1.7rem;
+    padding: 5px;
+}
+
+textarea{
+    width: 70%;
+    border: 2px solid black;
+    border-radius: 2px;
+}
+
+button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    height: 2ch;
+    margin-top: 20px;
+    background: green;
+    color: white;
+    border-radius: 4px;
+    font-size: 1.5rem;
+}

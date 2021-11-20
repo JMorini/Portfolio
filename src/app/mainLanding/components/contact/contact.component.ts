@@ -10,27 +10,5 @@ export class ContactComponent implements OnInit {
 
   constructor() { }
 
-  form = new FormGroup({
-    firstName: new FormControl('', Validators.required),
-    lastName: new FormControl('', Validators.required),
-    email: new FormControl('', [
-      Validators.required,
-      Validators.email
-    ]),
-    password: new FormControl('', [
-      Validators.required,
-      Validators.minLength(6)
-    ])
-    
-   });
-  
-    get firstname(){
-      return this.form.get('firstName')
-    }
-    ngOnInit() {
-    }
-  
-    onSubmit(){
-      alert(JSON.stringify(this.form.value));
-    }
+ ngOnInit(): void {}
 }
